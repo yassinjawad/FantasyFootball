@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Fantasy Football</string>
+    <string name="action_add_player">ADD</string>
+    <string name="action_get_count_teamTotals">TEAM TOTALS</string>
+
+    <string-array name="positions">
+        <item></item>
+        <item>QB</item>
+        <item>RB</item>
+        <item>WR</item>
+    </string-array>
+
+    <string-array name="teams">
+        <item></item>
+        <item>Eagles</item>
+        <item>Steelers</item>
+        <item>Cowboys</item>
+    </string-array>
+
+
+</resources>

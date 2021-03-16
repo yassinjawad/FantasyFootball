@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.fantasyfootball.MainActivity"
+    >
+    <item
+        android:id="@+id/action_add_player"
+        android:title="@string/action_add_player"
+        app:showAsAction="always"
+        android:onClick="addPlayer"/>
+    <item
+        android:id="@+id/action_get_count_eagles"
+        android:title="TEAM TOTALS"
+        app:showAsAction="always"
+        />
+    <item
+        android:id="@+id/action_get_count_steelers"
+        android:title="TEAM TOTALS"
+        app:showAsAction="always"
+        />
+    <item
+        android:id="@+id/action_get_count_cowboys"
+        android:title="TEAM TOTALS"
+        app:showAsAction="always"
+        />
+</menu>
