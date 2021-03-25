@@ -12,15 +12,6 @@
         android:id="@+id/action_get_count_eagles"
         android:title="TEAM TOTALS"
         app:showAsAction="always"
-        />
-    <item
-        android:id="@+id/action_get_count_steelers"
-        android:title="TEAM TOTALS"
-        app:showAsAction="always"
-        />
-    <item
-        android:id="@+id/action_get_count_cowboys"
-        android:title="TEAM TOTALS"
-        app:showAsAction="always"
+        android:onClick="getMessage"
         />
 </menu>

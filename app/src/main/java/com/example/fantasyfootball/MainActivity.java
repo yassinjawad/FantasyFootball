@@ -79,35 +79,19 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         return true;
     }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        switch (item.getItemId()){
-            case R.id.action_get_count_eagles :
-                Toast.makeText(this, getMessage("Eagles"), Toast.LENGTH_LONG).show();
-                return true;
-            case R.id.action_get_count_steelers :
-                Toast.makeText(this, getMessage("Steelers"), Toast.LENGTH_LONG).show();
-                return true;
-            case R.id.action_get_count_cowboys :
-                Toast.makeText(this, getMessage("Cowboys"), Toast.LENGTH_LONG).show();
-                return true;
-            default:
-                return super.onOptionsItemSelected(item);
-        }
-
-    }
 
     /**
-     * This method gets called when a menu-item in the overflow menu is selected.
-     * @param team selected major (CIS, CIT, or CSM)
-     * @return String that contains count of the number of students who have the selected major.
+     *
+     * @param menuItem
      */
-    public String getMessage (String team) {
-        int count = dbHandler.getCount(team);
-        return (count == 1 ? count + " player." : count + " players.");
+    public void getMessage (MenuItem menuItem) {
+        int countEagles = dbHandler.getCount("Eagles");
+        int countSteelers = dbHandler.getCount("Steelers");
+        int countCowboys = dbHandler.getCount("Cowboys");
+
+        Toast.makeText(this,"Eagles: " + countEagles
+                + "\nSteelers: " + countSteelers
+                + "\nCowboys: " + countCowboys, Toast.LENGTH_LONG).show();
     }
 
     /**
